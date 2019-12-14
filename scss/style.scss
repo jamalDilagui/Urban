@@ -1,0 +1,349 @@
+
+body{
+    color: #000;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+.navbar{
+    border-right: 1px solid #eee;
+    background-color: white;
+    bottom: 0;
+    display: block;
+    left: 0;
+    padding: 1.75rem 2rem 0 1.75rem;
+    position: fixed;
+    top: 0;
+    transition: left .25s ease;
+    width: 155px;
+    z-index: 3000;
+    .navbar-brand{
+        img{
+            max-width: 100%;
+        }
+        margin-bottom: 20px;
+    }
+    .navbar-nav{
+        display: block;
+        .nav-item{
+            .nav-link{
+                padding-right: 0;
+                color: black;
+            }
+            #what{
+                color: red;
+            }
+        }
+    }
+
+}
+
+.btn{
+    position: fixed;
+    left: 0;
+    z-index: 99990;
+    top: 0;
+    display: none;
+    background-color: #FF1D1D;
+    border: none;
+    border-radius: 0 0 5px 0;
+    height: 34px;
+    width: 37px;
+    color: white;
+    cursor: pointer;
+   
+}
+.btn:hover{
+    color: white;
+}
+
+.main{
+    margin-left: 155px;
+    overflow: hidden;
+
+    .creative{
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        z-index: 999;
+        width: 400px;
+        height: 200px;
+        margin-left: -97px;
+        margin-top: -100px;
+        span{
+            font-size: 100px;
+            font-weight: bold;
+            color: white;
+            line-height: 1;
+        }
+        span:first-child{
+            font-size: 100px;
+            font-weight: bold;
+            
+        }
+
+    }
+    
+    .main_slide{
+        position: relative;
+        height: 100vh;
+        .carousel-inner{
+            .carousel-item{
+                -webkit-background-size: cover;
+                -o-background-size: cover;
+                -moz-background-size: cover;
+                background-size: cover;
+                 height: 100vh;
+            }
+             
+            .slide_one{
+                background-image: url('../images/img1.jpg');
+            }
+            .slide_tow{
+                background-image: url('../images/img2.jpg');
+            }
+            .slide_thre{
+                background-image: url('../images/img3.jpg');
+            }
+        }
+    }
+   
+    .hard_working{
+        margin-top: 50px;
+        position: relative;
+        z-index: 9999;
+        .working_text{
+            width: 54%;
+            margin: auto;
+            p{
+                line-height: 1.75;
+            }
+        }
+        .hard{
+            border-left: 1px solid red;
+        }
+        .hard_text{
+            color: red;
+            margin: 75px 134px;
+            margin-right: 0;
+            .small_text{
+                font-size: 25px;
+                font-weight: bold;
+                margin-bottom: -17px;
+            }
+            .big_text{
+                font-size: 55px;
+                font-weight: bold;
+                margin-bottom: -17px;
+            }
+            .big_text_trans{
+                font-size: 55px;
+                font-weight: bold;
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: red
+            }
+        }
+    }
+
+    .div_img{
+        margin-top: 50px;
+        position: relative;
+        background: url('../images/img5.jpg') no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        height: 67vh;
+        background-position: 50% 80%;
+    }
+
+    .concepte{
+        margin-top: 50px;
+        position: relative;
+        z-index: 9999;
+        .row{
+            .col-md-3:first-child{
+                #first{
+                    font-weight: bold;
+                    font-size: 23px;
+                }
+                #first::after{
+                    content: '';
+                    height: 1px;
+                    width: 220px;
+                    background-color: black;
+                    display: block;
+                    margin-top: 45px;
+
+                }
+                #second{
+                    font-weight: bold;
+                    font-size: 23px;
+                }
+                
+            }
+            .col-md-3{
+                .p{
+                   color: #7b7777;
+                   width: 250px;
+                   line-height: 1.7;
+                }
+            }
+            .col-md-6{
+               .hard_text{
+                    color: red;
+                    right: 0;
+                    position: absolute; 
+                    margin-top: 39px;
+                    margin-right: 35px;
+                    .small_text{
+                        font-size: 25px;
+                        font-weight: bold;
+                        margin-bottom: -17px;
+                    }
+                    .big_text{
+                        font-size: 53px;
+                        font-weight: bold;
+                        margin-bottom: -17px;
+                    }
+                    .big_text_trans{
+                        font-size: 53px;
+                        font-weight: bold;
+                        -webkit-text-fill-color: transparent;
+                        -webkit-text-stroke-width: 1px;
+                        -webkit-text-stroke-color: red
+                    }
+                }
+            }
+        }
+    }
+
+    .latest_news{
+        margin-top: 50px;
+        position: relative;
+        z-index: 9999;
+        h6{
+            font-weight: bold;
+            color: red;
+            font-size: 20px;
+        }
+        .col-md-4{
+            .let_img1{
+                background-image: url('../images/let1.jpg');
+                background-size: cover;
+                width: 100%;
+                height: 250px;
+                margin-bottom: 14px;
+                cursor: pointer;
+              
+            }
+            .let_img2{
+                background-image: url('../images/let2.jpg');
+                background-size: cover;
+                width: 100%;
+                height: 250px;
+                margin-bottom: 14px;
+                cursor: pointer;
+            }
+            .let_img3{
+                background-image: url('../images/let3.jpg');
+                background-size: cover;
+                width: 100%;
+                height: 250px;
+                margin-bottom: 14px;
+                cursor: pointer;
+            }
+            a{
+                color: black;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+            span{
+                color: #C1C1C1;
+            }
+        }
+
+
+    }
+
+    .last{
+        margin-top: 100px;
+        position: relative;
+        z-index: 9999;
+        .col-md-6:first-child{
+           img{
+               max-width: 100%;
+           }
+        }
+        .col-md-6{
+            .hard_text{
+                color: red;
+                position: absolute; 
+                margin-top: 127px;
+                margin-left: 153px;
+                .small_text{
+                    font-size: 25px;
+                    font-weight: bold;
+                    margin-bottom: -17px;
+                }
+                .big_text{
+                    font-size: 56px;
+                    font-weight: bold;
+                    margin-bottom: -17px;
+                }
+                .big_text_trans{
+                    font-size: 56px;
+                    font-weight: bold;
+                    -webkit-text-fill-color: transparent;
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: red
+                }
+            }
+        }
+    }
+
+    .footer{
+        margin-top: 50px;
+        padding: 10px;
+        border-top: 1px solid #888;
+        position: relative;
+        z-index: 9999;
+        div{
+            margin-top: 10px;
+            span{
+                margin-right: 15px;
+                color: #888;
+                font-size: 13px;
+            }
+        }
+        .apps{
+            ul{
+                li{
+                    float: left;
+                    margin-right: 20px;
+                    color: #888;
+                }
+            }
+        }
+        .copyright{
+            margin-top: 19px;
+            span{
+                font-size: 11px;
+            }
+        }
+        #boder{
+            border-right: 1px solid #888;
+            padding-right: 10px;
+        }
+    }
+}
+
+.clear{
+    clear: both;
+}
+
+
+
+
+
